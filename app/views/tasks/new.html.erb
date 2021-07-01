@@ -1,0 +1,19 @@
+<body>
+  <form class = 'form' action='/tasks' method='post'>
+    <input type='hidden' name='authenticity_token' value='<%= form_authenticity_token %>'/>
+    <h3> Enter a new task:</h3>
+    <label name='task[title]'>Title</label><br/>
+    <input type='text' name='task[title]'/><br/>
+    <label name='task[description]'>Description</label><br/>
+    <textarea name="task[description]"></textarea><br/>
+    <input class = 'submit' type='submit'/>
+  </form>
+
+  <footer>
+    <h3><a href='/tasks'>Task Index</a></h3>
+    <h3><a href='/'> Home</a></h3>
+    <p>Contact Marla at: marlaa.schulz@gmail.com</p>
+    <p>LinkedIn: <a href='www.linkedin.com/in/marla-a-schulz'>linkedin.com/in/marla-a-schulz</a></p>
+    <p>GitHub: <a href ='https://github.com/marlitas'>github.com/marlitas</a></p>
+  </footer>
+</body>

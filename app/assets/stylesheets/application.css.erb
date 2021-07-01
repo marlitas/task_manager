@@ -1,0 +1,125 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import url('https://fonts.googleapis.com/css2?family=Kirang+Haerang&display=swap');
+
+ body {
+   background: linen url(<%= asset_path 'watercolour-4116932.png' %>) center top 40% no-repeat;
+ }
+
+h2, h3, h4, h5, h6, p, li, a, label {
+  font-family: arial, sans-serif;
+}
+
+section {
+  display: block;
+  margin: auto;
+  width: 80%;
+}
+
+h1 {
+  font-family: 'Kirang Haerang', arial, sans-serif;
+  font-weight: bold;
+  font-size: 4em;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.welcomemenu {
+  background-color: rgba(255, 250, 250, .75);
+  display: block;
+  position: absolute 20%;
+  width: 40%;
+  margin: 4% auto;
+  padding: 1%;
+  border-radius: 5px;
+}
+
+.welcomemenu li {
+  padding: 2px;
+  margin: 8px;
+  font-size: 1.5em;
+}
+
+.welcomemenu h3 {
+  font-size: 1.5em;
+}
+
+.heading {
+  padding: 4%;
+}
+
+footer {
+  display: block;
+  position: fixed;
+  bottom: 0;
+  padding: 2%;
+}
+
+a {
+  color: #BF5B47;
+  text-decoration: none;
+}
+
+.title {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.edit {
+  position: relative 10px;
+  font-size: 1em;
+  padding: 4px;
+  border: 2px solid #BF5B47;
+  text-transform: lowercase;
+  text-align: center;
+  width: 20%;
+}
+
+.submit {
+  position: relative 10px;
+  background-color: #BF5B47;
+  border: 2px solid #BF5B47;
+  color: white;
+  padding: 4px;
+  font-size: 1em;
+  width: 20%;
+}
+
+.form {
+  background-color: rgba(255, 250, 250, .75);
+  display: block;
+  width: 40%;
+  margin: 2% auto;
+  padding: 1%;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.form h3 {
+  font-family: 'Kirang Haerang', arial, sans-serif;
+  font-size: 2em;
+}
+
+input {
+  margin: 10px;
+  padding: 2px;
+}
+
+label {
+  margin: 10px;
+  padding: 2px;
+}
